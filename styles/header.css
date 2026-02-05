@@ -1,0 +1,91 @@
+header{
+    width: 100%;
+    padding: 28px 8%;
+}
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#nav-logo {
+    font-size: 24px;
+    color: #e6ce44;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+
+}
+
+.nav-item a {
+
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.nav-item a::after{ 
+
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(232, 226, 48), rgb(238, 233, 70));
+    transition: width 0.8s ease; /* faz a transiçao em forma suave  */
+}
+.nav-item a:hover::after{ /* HOVER FAZ COM QUE SO ACONTEÇA QUANDO TIVER COM MOUSE EM CIMA */
+    width: 100%;
+
+}
+
+.nav-item.active a{
+    color: #1d1d1d;
+}
+
+#mobile-btn{
+    display: none;
+}
+#mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 850px){
+    #nav-list,
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+    }
+}
+
+#mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mobile-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+}
+#mobile-nav-list .nav-item{
+    list-style: none;
+    text-align: center;
+}
