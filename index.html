@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -37,7 +43,7 @@
 
 
 
-            
+
         </nav>
         <div id="mobile-menu">
             <ul id="mobile-nav-list">
@@ -57,7 +63,255 @@
             </button>
 
         </div>
+
+        
     </header>
+
+    <div class="list">
+
+        <div class="product-img">
+            <img src="img/Pizza.png" alt="Pizzaa">
+        </div>
+        <div class="content">
+            <p class="product-tag">Pizzas</p>
+            <p class="description">
+                Nossa pizzaria valoriza a qualidade desde a escolha dos ingredientes, sempre selecionados entre os
+                melhores do mercado para garantir frescor e sabor em cada preparo. A massa é feita diariamente,
+                respeitando o tempo ideal de fermentação para alcançar leveza e crocância, enquanto o molho artesanal
+                traz o equilíbrio perfeito de temperos e tradição.
+
+                Os recheios são generosos, bem distribuídos e preparados com todo o cuidado, resultando em pizzas que se
+                destacam pelo sabor marcante e pela apresentação. Mais do que preparar pizzas, buscamos proporcionar uma
+                experiência única a cada fatia, unindo técnica, paixão e excelência em tudo o que fazemos.
+            </p>
+            <button class="btn-yellow-melt"><span>Saiba mais</span></button>
+        </div>
+    </div>
+
+    <section id="menu" class="menu-section">
+        <div class="menu-top">
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-menu="salgada">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                    Pizza salgada
+                </button>
+                <button class="menu-tab" data-menu="doce">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    Pizza doce
+                </button>
+                <button class="menu-tab">
+            </div>
+        </div>
+
+        <div class="menu-grid is-active" data-menu="salgada">
+            <article class="menu-item">
+                <img src="img/marguerita.jpg" alt="Marguerita">
+                <div class="menu-text">
+                    <h3>Marguerita</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, tomate em rodelas e manjericão fresco</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/pepperoni.jpg" alt="Pepperoni">
+                <div class="menu-text">
+                    <h3>Pepperoni</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela e pepperoni</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/abobrinha.jpg" alt="Abobrinha">
+                <div class="menu-text">
+                    <h3>Abobrinha</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, abobrinha refogada e alho frito da casa</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/mignoncomcheddar_-duneto.jpg" alt="DuNeto">
+                <div class="menu-text">
+                    <h3>DuNeto</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, mignon, cebola caramelizada, crispy de bacon, cheddar e parmesão</p>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img src="img/vegetariana1.jpg" alt="Vegetariana">
+                <div class="menu-text">
+                    <h3>Vegetariana</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, brócolis, tomate cereja, cebola e azeitona fatiada</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/milhobacon.jpg" alt="Milho com bacon">
+                <div class="menu-text">
+                    <h3>Milho com bacon</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, milho e bacon</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/dacasa.jpg" alt="DaCasa">
+                <div class="menu-text">
+                    <h3>DaCasa</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, calabresa, bacon, milho, azeitona, cheddar e parmesão</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/frangocatupiry.jpg" alt="Frango com catupiry">
+                <div class="menu-text">
+                    <h3>Frango com catupiry</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, frango e catupiry</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/favorita.jpg" alt="Favorita">
+                <div class="menu-text">
+                    <h3>Favorita</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, calabresa, cebola, ovo e bacon</p>
+                </div>
+            </article>
+
+            <article class="menu-item">
+                <img src="img/brocolisbacon1.jpg" alt="Brócolis com bacon">
+                <div class="menu-text">
+                    <h3>Brócolis com bacon</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, brócolis, bacon e catupiry</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/palmitochampignom.jpg" alt="Palmito">
+                <div class="menu-text">
+                    <h3>Palmito</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela e palmito</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/mignonespecial.jpg" alt="Mignon especial">
+                <div class="menu-text">
+                    <h3>Mignon especial</h3>
+                    <span class="menu-line"></span>
+                    <p>Mussarela, mignon, cebola, catupiry, cream cheese e cobertura de parmesão</p>
+                </div>
+            </article>
+        </div>
+        <div class="menu-grid is-hidden" data-menu="doce">
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Nutella com morangos">
+                <div class="menu-text">
+                    <h3>Nutella com morangos</h3>
+                    <span class="menu-line"></span>
+                    <p>Nutella e morangos</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="KitKat">
+                <div class="menu-text">
+                    <h3>KitKat</h3>
+                    <span class="menu-line"></span>
+                    <p>Chocolate com KitKat</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Banana com chocolate">
+                <div class="menu-text">
+                    <h3>Banana com chocolate</h3>
+                    <span class="menu-line"></span>
+                    <p>Banana, chocolate e chocolate branco</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Chocolate">
+                <div class="menu-text">
+                    <h3>Chocolate</h3>
+                    <span class="menu-line"></span>
+                    <p>Muito chocolate</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Brigadeiro">
+                <div class="menu-text">
+                    <h3>Brigadeiro</h3>
+                    <span class="menu-line"></span>
+                    <p>Chocolate com granulado</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Beijinho">
+                <div class="menu-text">
+                    <h3>Beijinho</h3>
+                    <span class="menu-line"></span>
+                    <p>Leite condensado, coco e mussarela</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Chocolate branco">
+                <div class="menu-text">
+                    <h3>Chocolate branco</h3>
+                    <span class="menu-line"></span>
+                    <p>Muito chocolate branco</p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="img/doces.jpg" alt="Merengue">
+                <div class="menu-text">
+                    <h3>Merengue</h3>
+                    <span class="menu-line"></span>
+                    <p>Chocolate, morango, suspiro e chocolate branco</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 id="contatos-titulos">
+            Entre Em Contato
+            <i class="fa-brands fa-whatsapp whatsapp-icon" aria-hidden="true"></i>
+        </h2> 
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviar(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" name="mensagem" placeholder="Digite sua Mensagem" rows="6"
+                    id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviar(event) {
+            event.preventDefault(); // Impede o recarregamento da página
+
+            const nome = document.getElementById("nome").value;
+            const mensagem = document.getElementById("mensagem").value;
+            const telefone = '';
+
+            // Monta a mensagem
+            const texto = `Olá! Me chamo ${nome}. ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            // URL do WhatsApp
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            // Abre o WhatsApp em uma nova aba
+            window.open(url, '_blank');
+        }
+    </script>
+
+
     <script src="script.js"></script>
 </body>
 

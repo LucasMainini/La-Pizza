@@ -11,7 +11,7 @@ header{
 }
 #nav-logo {
     font-size: 24px;
-    color: #e6ce44;
+    color: #f5d419;
 }
 
 #nav-list {
@@ -69,6 +69,15 @@ header{
         font-size: 1.5rem;
         cursor: pointer;
 
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 20px 6%;
+    }
+    #nav-logo{
+        font-size: 20px;
     }
 }
 
